@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n, present = 0, i;
+    char status;
+
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+
+    printf("Enter P for Present and A for Absent:\n");
+    for (i = 1; i <= n; i++) {
+        scanf(" %c", &status);
+        if (status == 'P' || status == 'p')
+            present++;
+    }
+
+    printf("Number of present students = %d", present);
+
+    return 0;
+}
