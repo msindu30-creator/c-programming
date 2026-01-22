@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    FILE *f;
+    int x, key, found = 0;
+
+    f = fopen("data.txt", "r");
+    scanf("%d", &key);
+
+    while (fscanf(f, "%d", &x) != EOF)
+        if (x == key) found = 1;
+
+    fclose(f);
+    printf(found ? "Record Found" : "Record Not Found");
+    return 0;
+}
