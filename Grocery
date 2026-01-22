@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float p, q, total = 0;
+
+    printf("Enter number of items: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        scanf("%f %f", &p, &q);
+        total += p * q;
+    }
+
+    printf("Total bill = %.2f", total);
+    return 0;
+}
