@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+int i,n,key;
+int price[10];
+scanf("%d",&n);
+for(i=0;i<n;i++) scanf("%d",&price[i]);
+scanf("%d",&key);
+for(i=0;i<n;i++)
+if(price[i]==key){ printf("Item Found"); return 0; }
+printf("Item Not Found");
+return 0;
+}
