@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float rain[12], sum = 0, avg;
+    int i;
+
+    printf("Enter rainfall for 12 months:\n");
+    for (i = 0; i < 12; i++) {
+        scanf("%f", &rain[i]);
+        sum += rain[i];
+    }
+
+    avg = sum / 12;
+    printf("Average rainfall = %.2f", avg);
+
+    return 0;
+}
