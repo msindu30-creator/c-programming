@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+void menu() {
+    printf("1.Add\n2.Sub\n3.Mul\n4.Div");
+}
+
+int main() {
+    menu();
+    return 0;
+}
