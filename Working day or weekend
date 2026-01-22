@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(){
+int d;
+scanf("%d",&d);
+if(d==6 || d==7) printf("Weekend");
+else printf("Working Day");
+return 0;
+}
