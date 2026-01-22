@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+struct course {
+    int code;
+    char name[20];
+    int duration;
+};
+
+int main() {
+    struct course c;
+    scanf("%d%s%d", &c.code, c.name, &c.duration);
+    printf("Code: %d\nCourse: %s\nDuration: %d months", 
+           c.code, c.name, c.duration);
+    return 0;
+}
