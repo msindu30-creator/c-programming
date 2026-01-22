@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(){
+float amt;
+scanf("%f",&amt);
+if(amt>=5000) printf("Discount Applicable");
+else printf("No Discount");
+return 0;
+}
