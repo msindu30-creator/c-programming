@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int area(int l, int b) {
+    return l * b;
+}
+
+int main() {
+    int l, b;
+    scanf("%d%d", &l, &b);
+    printf("Area = %d", area(l, b));
+    return 0;
+}
