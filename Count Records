@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    FILE *f;
+    char ch;
+    int count = 0;
+
+    f = fopen("data.txt", "r");
+    while ((ch = fgetc(f)) != EOF)
+        if (ch == '\n') count++;
+
+    fclose(f);
+    printf("Number of records = %d", count);
+    return 0;
+}
