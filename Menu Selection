@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+int ch;
+printf("1.Tea 2.Coffee 3.Juice\n");
+scanf("%d",&ch);
+switch(ch){
+case 1: printf("Tea Selected"); break;
+case 2: printf("Coffee Selected"); break;
+case 3: printf("Juice Selected"); break;
+default: printf("Invalid Choice");
+}
+return 0;
+}
