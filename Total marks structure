@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+struct student {
+    int m1, m2, m3;
+};
+
+int main() {
+    struct student s;
+    scanf("%d%d%d", &s.m1, &s.m2, &s.m3);
+    printf("Total = %d", s.m1 + s.m2 + s.m3);
+    return 0;
+}
