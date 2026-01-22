@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+struct item {
+    int id, qty;
+    float price;
+};
+
+int main() {
+    struct item i;
+    scanf("%d%d%f", &i.id, &i.qty, &i.price);
+    printf("ID:%d\nQty:%d\nValue:%.2f", i.id, i.qty, i.qty * i.price);
+    return 0;
+}
