@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+float p,d;
+scanf("%f%f",&p,&d);
+printf("Total Price = %.2f",p-(p*d/100));
+return 0;
+}
