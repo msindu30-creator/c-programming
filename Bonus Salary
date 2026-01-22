@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+float s,b;
+scanf("%f%f",&s,&b);
+printf("Total Salary = %.2f",s+b);
+return 0;
+}
