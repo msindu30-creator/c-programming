@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+int days;
+scanf("%d",&days);
+printf("Days Worked = %d",days);
+return 0;
+}
