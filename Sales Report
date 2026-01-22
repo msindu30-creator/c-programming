@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    FILE *f;
+    int sales;
+
+    f = fopen("sales.txt", "w");
+    scanf("%d", &sales);
+    fprintf(f, "Total Sales = %d", sales);
+    fclose(f);
+
+    return 0;
+}
