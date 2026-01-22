@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    FILE *f1, *f2;
+    int old, new, x;
+
+    f1 = fopen("data.txt", "r");
+    f2 = fopen("temp.txt", "w");
+
+    scanf("%d%d", &old, &new);   // old value, new value
+    while (fscanf(f1, "%d", &x) != EOF)
+        fprintf(f2, "%d\n", x == old ? new : x);
+
+    fclose(f1);
+    fclose(f2);
+
+    remove("data.txt");
+    rename("temp.txt", "data.txt");
+    return 0;
+}
