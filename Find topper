@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, marks, max = 0;
+
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        scanf("%d", &marks);
+        if (marks > max) max = marks;
+    }
+
+    printf("Topper marks = %d", max);
+    return 0;
+}
