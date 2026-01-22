@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+    int u;
+    float bill;
+    scanf("%d",&u);
+
+    if(u<=100) bill=u*1.5;
+    else if(u<=200) bill=100*1.5+(u-100)*2.5;
+    else bill=100*1.5+100*2.5+(u-200)*4;
+
+    printf("Electricity Bill = %.2f",bill);
+    return 0;
+}
