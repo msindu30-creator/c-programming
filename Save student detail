@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    FILE *f;
+    int id;
+    char name[20];
+
+    f = fopen("student.txt", "w");
+    scanf("%d%s", &id, name);
+    fprintf(f, "ID: %d\nName: %s", id, name);
+    fclose(f);
+
+    return 0;
+}
