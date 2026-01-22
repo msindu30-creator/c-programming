@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char s[100], t[100];
+    int i, j = 0;
+
+    gets(s);
+    for (i = 0; s[i] != '\0'; i++)
+        if (s[i] != ' ')
+            t[j++] = s[i];
+
+    t[j] = '\0';
+    printf("%s", t);
+    return 0;
+}
